@@ -1,0 +1,5 @@
+import './globals.css';
+import { Metadata } from 'next';
+import { SiteShell } from '../components/SiteShell';
+export const metadata: Metadata={title:'IRONFORGE FITNESS | Build Your Strongest Self',description:'Premium strength, conditioning and personal training gym. Book a free trial and explore memberships, classes and expert coaching.',openGraph:{title:'IRONFORGE FITNESS',description:'Build your strongest self.',type:'website'}};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><SiteShell>{children}</SiteShell><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"HealthClub",name:"Ironforge Fitness",url:"https://ironforge.fit",telephone:"+91-99999-99999",address:{"@type":"PostalAddress",streetAddress:"24 Fitness Avenue",addressLocality:"Mathura",addressRegion:"Uttar Pradesh",postalCode:"281001",addressCountry:"IN"},openingHours:["Mo-Sa 05:00-23:00","Su 06:00-22:00"]})}} /></body></html>}

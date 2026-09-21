@@ -1,0 +1,1 @@
+import {MetadataRoute} from 'next';export default function sitemap():MetadataRoute.Sitemap{const base='https://ironforge.fit';return ['/','/about','/programs','/classes','/schedule','/trainers','/membership','/gallery','/personal-training','/contact','/book-free-trial'].map(url=>({url:base+url,lastModified:new Date()}))}
